@@ -5,8 +5,9 @@ import axios from "axios";
 const app = express();
 app.use(
   cors({
+    credentials: true,
     methods: ["GET", "POST"],
-    origin: "https://weather-api-five-omega.vercel.app/",
+    origin: ["https://weatherappamar.vercel.app/"],
   })
 );
 app.use(json());
