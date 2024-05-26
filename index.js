@@ -5,7 +5,6 @@ import axios from "axios";
 const app = express();
 app.use(
   cors({
-    credentials: true,
     methods: ["GET", "POST"],
     origin: "https://weather-app-chi-hazel.vercel.app/",
   })
