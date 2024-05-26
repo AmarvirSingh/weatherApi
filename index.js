@@ -12,6 +12,9 @@ app.use(
 );
 app.use(json());
 
+app.get("/", (req, res) => {
+  res.send("Your app is up");
+});
 //app.get();
 app.post("/getWeather", async (req, res) => {
   const { location } = req.body;
