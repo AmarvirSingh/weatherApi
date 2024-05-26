@@ -7,7 +7,7 @@ app.use(
   cors({
     credentials: true,
     methods: ["GET", "POST"],
-    origin: ["https://weatherappamar.vercel.app/"],
+    origin: ["https://amar-weather-app.vercel.app/"],
   })
 );
 app.use(json());
