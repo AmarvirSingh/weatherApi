@@ -5,9 +5,9 @@ import axios from "axios";
 const app = express();
 app.use(
   cors({
+    origin: ["https://amar-weather-app.vercel.app"],
     credentials: true,
     methods: ["GET", "POST"],
-    origin: ["https://amar-weather-app.vercel.app/"],
   })
 );
 app.use(json());
