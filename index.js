@@ -6,7 +6,7 @@ const app = express();
 app.use(
   cors({
     methods: ["GET", "POST"],
-    origin: "https://weather-qqi38efrh-amarvirsinghs-projects.vercel.app",
+    origin: "https://weather-api-five-omega.vercel.app/",
   })
 );
 app.use(json());
