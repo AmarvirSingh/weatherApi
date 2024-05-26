@@ -7,13 +7,13 @@ app.use(
   cors({
     credentials: true,
     methods: ["GET", "POST"],
-    //origin:""
+    origin: "https://weather-app-chi-hazel.vercel.app/",
   })
 );
 app.use(json());
 
 app.get("/", (req, res) => {
-  res.send("Your app is up");
+  res.json({ message: "Your app is up" });
 });
 //app.get();
 app.post("/getWeather", async (req, res) => {
