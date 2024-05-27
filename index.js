@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://weather-app-delta-liard-92.vercel.app"],
+    origin: ["https://weather-app-delta-liard-92.vercel.app/"],
     credentials: true,
     methods: ["GET", "POST"],
   })
